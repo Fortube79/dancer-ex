@@ -4,9 +4,9 @@ use Plack::Runner;
 
 ## For some reason Apache SetEnv directives dont propagate
 ## correctly to the dispatchers, so forcing PSGI and env here 
-## is safer.
+## is safer.'production'
 set apphandler => 'PSGI';
-set environment => 'production';
+set environment => 'development';
 
 my $psgi;
 $psgi = path($ENV{'DOCUMENT_ROOT'}, 'app.psgi');
