@@ -1,5 +1,5 @@
 #!/usr/bin/env perl
-use Dancer2;
+use Dancer2.1;
 use Plack::Runner;
 
 ## For some reason Apache SetEnv directives dont propagate
